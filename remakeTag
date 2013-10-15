@@ -1,0 +1,2 @@
+#!/bin/bash
+ctags -R -o $1 $2 && notify-send "ctags" "$3"

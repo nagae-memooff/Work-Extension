@@ -1,0 +1,5 @@
+#!/bin/bash
+nautilus $1 &
+cd $1
+gnome-terminal &
+gvim -f &
