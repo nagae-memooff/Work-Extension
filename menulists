@@ -3,5 +3,3 @@ nautilus:打开工作目录
 ctags:建立工作目录的tag
 ctags:建立自带类及函数的tag
 git:提交到本地仓库
-git:从本地仓库推送到远程仓库
-git:从远程仓库拉取至本地仓库

@@ -1,5 +1,6 @@
 #!/bin/bash
+sshfs -o cache=yes,allow_other,idmap=user mdy@yuncaipu.com:/swidy/www/mdyapi.yuncaipu.com/html/ $1 -p 22 ; cd $1 ;
+gnome-terminal -x ssh mdy@yuncaipu.com &
+gnome-terminal -x ssh mdy@yuncaipu.com &
 nautilus $1 &
-cd $1
-gnome-terminal &
 gvim -f &

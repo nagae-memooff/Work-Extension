@@ -1,3 +1,4 @@
 #!/bin/bash
 cd $1
-notify-send "git pull:" "`git pull 2>&1`"
+#git pull origin dev
+notify-send "git pull:" "`git pull origin dev 2>&1`"

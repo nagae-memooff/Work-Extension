@@ -17,9 +17,9 @@ const Util = imports.misc.util;
 const Gettext = imports.gettext;
 
 var path;
-var workDir = "/home/nagae-memooff/rails/BlogNagamemo/"
+var workDir = "/home/nagae-memooff/rails/mdyapi/"
 var builtInDir = "/home/nagae-memooff/.rvm/rubies/default/";
-var gitDir = "/home/nagae-memooff/rails/BlogNagamemo/";
+var gitDir = "/home/nagae-memooff/rails/mdyapi/";
 var workDirTo = "/software/tags/my-tags";
 var builtInDirTo = "/software/tags/built-in-tags";
 
@@ -40,7 +40,7 @@ TasksManager.prototype =
 	{			
 		PanelMenu.Button.prototype._init.call(this, St.Align.START);
 
-		this.buttonText = new St.Label({text:"ror"});
+		this.buttonText = new St.Label({text:"ycp"});
 		this.buttonText.set_style("text-align:center");
 		this.actor.add_actor(this.buttonText);
 		let varFile = this.file;
@@ -124,14 +124,14 @@ function commitToLocalRepository() {
 	cmd = resovlePath('commitToLocalRepository');
 	let conn = Util.spawn([cmd,gitDir]);
 }
-	,
-function pushToRemote() {
-	cmd = resovlePath('pushToRemote');
-	let conn = Util.spawn([cmd,gitDir]);
-}
-	,
-function pullFromRemote() {
-	cmd = resovlePath('pullFromRemote');
-	let conn = Util.spawn([cmd,gitDir]);
-}
+//  ,
+//function pushToRemote() {
+//  cmd = resovlePath('pushToRemote');
+//  let conn = Util.spawn([cmd,gitDir]);
+//}
+//  ,
+//function pullFromRemote() {
+//  cmd = resovlePath('pullFromRemote');
+//  let conn = Util.spawn([cmd,gitDir]);
+//}
 ]

@@ -5,5 +5,5 @@ git add .
 git commit >> gitlogfile.txt 
 echo "</==="`date`"======>" >> gitlogfile.txt 
 notify-send "git commit:" "finished."
-gvim gitlogfile.txt
+gvim -f gitlogfile.txt
 
